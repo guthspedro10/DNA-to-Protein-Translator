@@ -28,12 +28,15 @@ A aplicação recebe uma sequência de **DNA**, realiza a **transcrição para R
 
 ## 🚀 Como Executar
 
-```bash
+
 git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
+
 cd DNA-to-Protein-Translator
+
 javac DNA-to-Protein-Translator.java
+
 java DNA-to-Protein-Translator
-```
+
 
 ---
 
