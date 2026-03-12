@@ -1,34 +1,34 @@
-# 🧬 Tradutor de Sequências Genéticas
+# 🧬 Genetic Sequence Translator
 
-Projeto em **`Java`** que simula o **`Dogma Central da Biologia Molecular`**:
+Project developed in **`Java`** that simulates the **`Central Dogma of Molecular Biology`**:
 
-DNA → RNA → Proteína
+DNA → RNA → Protein
 
-A aplicação recebe uma sequência de **DNA**, realiza a **transcrição para RNA** e depois a **tradução para aminoácidos** utilizando uma tabela de códons armazenada em um **HashMap**.
-
----
-
-## ⚙️ Funcionalidades
-
-- Transcrição de **DNA para RNA** (T → U)
-- Tradução de **RNA para proteína**
-- Identificação do **Start Codon (AUG)**
-- Interrupção automática em **Stop Codons (UAA, UAG, UGA)**
-- Uso de **HashMap como dicionário de códons**
-- Código documentado com **Javadoc**
+The application receives a **DNA sequence**, performs **transcription to RNA**, and then **translation into amino acids** using a codon table stored in a **HashMap**.
 
 ---
 
-## 🛠️ Tecnologias
+## ⚙️ Features
+
+- **DNA to RNA transcription** (T → U)
+- **RNA to protein translation**
+- Identification of the **Start Codon (AUG)**
+- Automatic stop at **Stop Codons (UAA, UAG, UGA)**
+- Use of **HashMap as a codon dictionary**
+- Code documented using **Javadoc**
+
+---
+
+## 🛠️ Technologies
 
 - Java
 - HashMap (Java Collections)
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-
+```
 git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
 
 cd DNA-to-Protein-Translator
@@ -36,51 +36,51 @@ cd DNA-to-Protein-Translator
 javac DNA-to-Protein-Translator.java
 
 java DNA-to-Protein-Translator
-
+```
 
 ---
 
-## 💻 Exemplo
+## 💻 Example
 
-Entrada:
+Input:
 
 ```
 DNA: ATGGTTTAA
 ```
 
-Processo:
+Process:
 
 ```
 RNA: AUGGUUUAA
 ```
 
-Saída:
+Output:
 
 ```
-Proteína: Met - Val
+Protein: Met - Val
 ```
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Goal
 
-Este projeto foi desenvolvido para:
+This project was developed to:
 
-- Praticar **`programação em Java`**
-- Aplicar conceitos de **`bioinformática`**
-- Simular processos reais da **`biologia molecular`**
-- Demonstrar o uso de **estruturas de dados como HashMap**
-
----
-
-## 📚 Possíveis Melhorias Futuras
-
-- Implementar leitura de sequências via **`arquivo FASTA`**
-- Criar **`interface gráfica`**
-- Adicionar **`validação de sequências de DNA`**
+- Practice **`Java programming`**
+- Apply concepts from **`bioinformatics`**
+- Simulate real processes of **`molecular biology`**
+- Demonstrate the use of **data structures such as HashMap**
 
 ---
 
-## 📌 Status do Projeto
+## 📚 Possible Future Improvements
 
-✔ Em andamento 
+- Implement sequence input via **`FASTA file`**
+- Create a **`graphical interface`**
+- Add **`DNA sequence validation`**
+
+---
+
+## 📌 Project Status
+
+✔ In progress
