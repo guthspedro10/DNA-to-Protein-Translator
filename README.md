@@ -42,25 +42,6 @@ DTPTProject
 │           Stores the codon → amino acid mapping
 ```
 
-### Classes
-
-**App**
-
-- Entry point of the application
-- Demonstrates the DNA → RNA → Protein workflow
-
-**TranslatorService**
-
-Responsible for:
-
-- Transcribing DNA into RNA
-- Translating RNA into a protein chain
-
-**GeneticCode**
-
-- Stores the **genetic code table**
-- Uses a **HashMap** to map RNA codons to amino acids
-
 ---
 
 ## 🛠️ Technologies
