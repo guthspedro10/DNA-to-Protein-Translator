@@ -9,27 +9,21 @@ public class GeneticCode {
 
     static {
 
-        //Start Codon
-        codonTable.put("AUG", "Metionina (Início)");
+        codonTable.put("AUG", "Met");
         
-        //Stop Codons
         codonTable.put("UAA", "STOP");
         codonTable.put("UAG", "STOP");
         codonTable.put("UGA", "STOP");
         
-        // Phenilalanina
         codonTable.put("UUU", "Phe");
         codonTable.put("UUC", "Phe");
 
-        // Leucina
         codonTable.put("UUA", "Leu");
         codonTable.put("UUG", "Leu");
 
-        // Valina
         codonTable.put("GUU", "Val");
         codonTable.put("GUC", "Val");
 
-        // Alanina
         codonTable.put("GCU", "Ala");
         codonTable.put("GCC", "Ala");
 
