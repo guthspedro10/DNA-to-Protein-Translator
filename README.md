@@ -1,113 +1,135 @@
-# 🧪 Blood Test Analyzer
+# 🧬 DNA to Protein Translator
 
-Project developed in **Java** that simulates a **basic clinical laboratory analysis system**.
+Project developed in **Java** that simulates part of the **Central Dogma of Molecular Biology**:
 
-The application receives **blood test values** and compares them with **reference ranges**, classifying each result as **Low, Normal, or High**.
+DNA → RNA → Protein
 
-This project was created to practice **Java programming**, **object-oriented design**, and apply concepts from **clinical data analysis in biomedical informatics**.
+The application receives a **DNA sequence**, performs **transcription to RNA**, and then **translation into amino acids** using a **genetic code table stored in a HashMap**.
 
----
-
-# ⚙️ Features
-
-- Blood test result analysis based on **reference ranges**
-- Automatic classification of results (`Low`, `Normal`, `High`)
-- **Object-oriented design** using classes
-- **Modular structure** separating logic and data models
-- Code documented using **Javadoc**
+This project was created to practice **Java programming**, **data structures**, and apply **bioinformatics concepts**.
 
 ---
 
-# 🛠️ Technologies
+## ⚙️ Features
+
+- **DNA → RNA transcription** (Thymine `T` replaced by Uracil `U`)
+- **RNA → protein translation** using codon triplets
+- **Stop codon detection** (`UAA`, `UAG`, `UGA`)
+- **Codon dictionary implemented with HashMap**
+- **Modular architecture using packages**
+- **Code documented using Javadoc**
+
+---
+
+## 🏗️ Project Structure
+
+The project follows a **layered structure** separating responsibilities:
+
+```
+DTPTProject
+│
+├── MainPackage
+│   │
+│   ├── App.java
+│   │   Application entry point
+│   │
+│   ├── Service
+│   │   └── TranslatorService.java
+│   │       Handles transcription and translation logic
+│   │
+│   └── Model
+│       └── GeneticCode.java
+│           Stores the codon → amino acid mapping
+```
+
+---
+
+## 🛠️ Technologies
 
 - **Java**
-- **Java Collections**
-- **Object-Oriented Programming (OOP)**
-- **Javadoc Documentation**
+- **HashMap (Java Collections)**
+- **Javadoc documentation**
 
 ---
 
-# 🚀 How to Run
+## 🚀 How to Run
 
 Clone the repository:
 
 ```
-git clone https://github.com/guthspedro10/blood-test-analyzer.git
+git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
 ```
 
 Navigate to the project folder:
 
 ```
-cd blood-test-analyzer
+cd DNA-to-Protein-Translator
 ```
 
 Compile the project:
 
 ```
-javac BTAProject/MainPackage/App.java
+javac DTPTProject/MainPackage/App.java
 ```
 
 Run the application:
 
 ```
-java BTAProject.MainPackage.App
+java DTPTProject.MainPackage.App
 ```
 
 ---
 
-# 💻 Example
+## 💻 Example
 
-### Input test values
-
-```
-Hemoglobin: 11.5
-Glucose: 140
-Cholesterol: 180
-```
-
-### Reference ranges
+Input DNA sequence:
 
 ```
-Hemoglobin: 13.0 – 17.0
-Glucose: 70 – 99
-Cholesterol: < 200
+ATGGTTGCTTAA
 ```
 
-### Console Output
+Transcription:
 
 ```
-Blood Test Report
+AUGGUUGCUUAA
+```
 
-Hemoglobin: Low
-Glucose: High
-Cholesterol: Normal
+Translation result:
+
+```
+Met-Val-Ala
+```
+
+Console output:
+
+```
+Generated mRNA:  AUGGUUGCUUAA
+Final Protein:   Met-Val-Ala
 ```
 
 ---
 
-# 🎯 Project Goal
+## 🎯 Project Goal
 
 This project was developed to:
 
 - Practice **Java programming**
-- Apply **object-oriented design**
-- Simulate **basic clinical laboratory data analysis**
-- Demonstrate handling of **structured biomedical data**
-- Reinforce **clean code organization using packages**
+- Apply concepts from **bioinformatics**
+- Simulate biological processes from **molecular biology**
+- Demonstrate the use of **data structures such as HashMap**
+- Practice **clean code organization using packages**
 
 ---
 
-# 📚 Possible Future Improvements
+## 📚 Possible Future Improvements
 
-- Add **more laboratory tests**
-- Implement **patient data and exam history**
-- Add **input validation**
-- Support **CSV file input**
+- Add **complete genetic code table (all codons)**
+- Add **DNA sequence validation**
+- Support **FASTA file input**
 - Create a **graphical interface**
-- Generate **visual reports**
 
 ---
 
-# 📌 Project Status
+## 📌 Project Status
 
-🚧 **In Development** — Educational project focused on learning **Java** and **Biomedical Informatics concepts**.
+✅ **Completed** – Educational project focused on learning **Java and Bioinformatics concepts**.
