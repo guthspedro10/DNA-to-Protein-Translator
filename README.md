@@ -75,7 +75,7 @@ javac DTPTProject/MainPackage/App.java
 Run the application:
 
 ```
-java DTPTProject.MainPackage.App
+java src.App
 ```
 
 ---

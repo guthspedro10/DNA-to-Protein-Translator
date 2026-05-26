@@ -1,4 +1,4 @@
-package DTPTProject.MainPackage.Model;
+package src.Model;
 
 import java.util.HashMap;
 import java.util.Map;

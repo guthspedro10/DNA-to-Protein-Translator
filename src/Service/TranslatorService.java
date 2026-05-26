@@ -1,6 +1,6 @@
-package DTPTProject.MainPackage.Service;
+package src.Service;
 
-import DTPTProject.MainPackage.Model.GeneticCode;
+import src.Model.GeneticCode;
 
 /**
  * The TranslatorService class provides methods to transcribe DNA into RNA 

@@ -1,6 +1,6 @@
-package DTPTProject.MainPackage;
+package src;
 
-import DTPTProject.MainPackage.Service.TranslatorService;
+import src.Service.TranslatorService;
 
 /**
  * Main application class to demonstrate DNA transcription and protein translation.
