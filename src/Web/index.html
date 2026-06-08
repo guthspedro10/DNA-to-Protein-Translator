@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Converter</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>DNA to Protein Translator</h2>
+
+        <nav>
+            <a>Converter</a>
+            <a>Genetic Code</a>
+            <a>About</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- CARD PRINCIPAL -->
+        <section class="card">
+
+            <!-- INPUT -->
+            <div class="block">
+                <h3>DNA</h3>
+                <textarea placeholder="Paste DNA sequence (A, T, C, G)..."></textarea>
+            </div>
+
+            <!-- BOTÃO -->
+            <div class="center">
+                <button>Convert</button>
+            </div>
+
+            <!-- RESULTADOS -->
+            <div class="results">
+
+                <div class="result-box">
+                    <h3>RNA</h3>
+                    <textarea readonly placeholder="RNA sequence..."></textarea>
+                </div>
+
+                <div class="result-box">
+                    <h3>Protein</h3>
+                    <textarea readonly placeholder="Protein sequence..."></textarea>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
 
 </body>
 </html>
