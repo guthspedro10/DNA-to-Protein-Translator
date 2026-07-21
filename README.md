@@ -1,135 +1,128 @@
 # 🧬 DNA to Protein Translator
 
-Project developed in **Java** that simulates part of the **Central Dogma of Molecular Biology**:
+Full-stack web application developed in Java (Spring Boot) and Vanilla JavaScript that simulates part of the Central Dogma of Molecular Biology:
 
 DNA → RNA → Protein
 
-The application receives a **DNA sequence**, performs **transcription to RNA**, and then **translation into amino acids** using a **genetic code table stored in a HashMap**.
+The application receives a DNA sequence, performs transcription to RNA, executes translation into an amino acid chain using a genetic code dictionary, and automatically persists the transaction history in a relational database.
 
-This project was created to practice **Java programming**, **data structures**, and apply **bioinformatics concepts**.
+This project was built to practice Full-Stack Software Development, RESTful API architecture, Database Persistence, and apply Bioinformatics concepts.
 
 ---
 
 ## ⚙️ Features
 
-- **DNA → RNA transcription** (Thymine `T` replaced by Uracil `U`)
-- **RNA → protein translation** using codon triplets
-- **Stop codon detection** (`UAA`, `UAG`, `UGA`)
-- **Codon dictionary implemented with HashMap**
-- **Modular architecture using packages**
-- **Code documented using Javadoc**
+- RESTful API Endpoint for DNA processing (POST /convert).
+- DNA → RNA Transcription (Thymine T replaced by Uracil U).
+- RNA → Protein Translation using codon triplets starting at the Start Codon (AUG).
+- Stop Codon Detection (UAA, UAG, UGA) to terminate protein synthesis.
+- Complete Codon Dictionary implemented via HashMap.
+- SQL Database Persistence: Automatically saves each processing entry (id auto-increment, dna, rna, protein) using Spring Data JPA.
+- Responsive Web UI built with HTML, CSS, and JavaScript.
+- CORS Enabled for seamless client-server communication.
 
 ---
 
-## 🏗️ Project Structure
+## 🏗️ Project Architecture
 
-The project follows a **layered structure** separating responsibilities:
+The project follows a standard Spring Boot layered architecture:
 
-```
-DTPTProject
-│
-├── MainPackage
-│   │
-│   ├── App.java
-│   │   Application entry point
-│   │
-│   ├── Service
-│   │   └── TranslatorService.java
-│   │       Handles transcription and translation logic
-│   │
-│   └── Model
-│       └── GeneticCode.java
-│           Stores the codon → amino acid mapping
-```
+- controller/
+  - DNAController.java: REST Controller handling HTTP requests
+- dto/
+  - requestDTO/DNARequest.java: Request payload mapping
+  - responseDTO/DNAResponse.java: Response payload mapping
+- model/
+  - DNAModel.java: JPA Entity mapping to the SQL database table
+  - GeneticCode.java: HashMap mapping codons to amino acids
+- repository/
+  - DNARepository.java: Spring Data JPA Repository for database queries
+- service/
+  - DNAService.java: Core transcription, translation, and persistence logic
 
 ---
 
 ## 🛠️ Technologies
 
-- **Java**
-- **HashMap (Java Collections)**
-- **Javadoc documentation**
+### Backend & Database
+- Java 21
+- Spring Boot (Web, REST API)
+- Spring Data JPA / Hibernate
+- MySQL (Managed via MySQL Workbench)
+- Maven (Dependency & Build Management)
+
+### Frontend
+- HTML5 & CSS3
+- JavaScript (ES6+) (Fetch API)
+
+---
+
+## 🔌 API Reference
+
+### Convert DNA Sequence
+
+POST /convert
+
+Request Body:
+{
+  "dna": "ATGACTGCCAATTGA"
+}
+
+Response (200 OK):
+{
+  "rna": "AUGACUGCCAAUUGA",
+  "protein": "Met-Thr-Ala-Asn"
+}
 
 ---
 
 ## 🚀 How to Run
 
-Clone the repository:
+### Prerequisites
+- Java Development Kit (JDK 21)
+- MySQL Server & MySQL Workbench
+- Maven (or use the included ./mvnw wrapper)
 
-```
+### 1. Database Setup
+Configure your MySQL database connection in src/main/resources/application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/dna_db
+spring.datasource.username=YOUR_MYSQL_USER
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+spring.jpa.hibernate.ddl-auto=update
+
+### 2. Clone the repository
 git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
-```
-
-Navigate to the project folder:
-
-```
 cd DNA-to-Protein-Translator
-```
 
-Compile the project:
+### 3. Run the Backend API
+./mvnw spring-boot:run
+(The server will start on http://localhost:8080)
 
-```
-javac DTPTProject/MainPackage/App.java
-```
-
-Run the application:
-
-```
-java src.App
-```
+### 4. Run the Frontend
+Simply open the index.html file in your browser or serve it using Live Server in VS Code.
 
 ---
 
-## 💻 Example
+## 💻 Example Usage
 
-Input DNA sequence:
-
-```
-ATGGTTGCTTAA
-```
-
-Transcription:
-
-```
-AUGGUUGCUUAA
-```
-
-Translation result:
-
-```
-Met-Val-Ala
-```
-
-Console output:
-
-```
-Generated mRNA:  AUGGUUGCUUAA
-Final Protein:   Met-Val-Ala
-```
-
----
-
-## 🎯 Project Goal
-
-This project was developed to:
-
-- Practice **Java programming**
-- Apply concepts from **bioinformatics**
-- Simulate biological processes from **molecular biology**
-- Demonstrate the use of **data structures such as HashMap**
-- Practice **clean code organization using packages**
+1. Open the Web UI.
+2. Paste a DNA sequence starting with ATG (e.g., ATGACTGCCAATTGA).
+3. Click Convert.
+4. View the transcribed RNA sequence and resulting Protein chain in real time.
+5. Check MySQL Workbench to see the auto-incremented record saved in the database.
 
 ---
 
 ## 📚 Possible Future Improvements
 
-- Add **complete genetic code table (all codons)**
-- Add **DNA sequence validation**
-- Support **FASTA file input**
-- Create a **graphical interface**
+- Add DNA sequence validation (regex check for valid A, T, C, G bases).
+- Add support for FASTA file uploads.
+- Add GET endpoints to retrieve saved translation history in the UI.
+- Add automated unit tests with JUnit 5 & Mockito.
 
 ---
 
 ## 📌 Project Status
 
-✅ **Completed** – Educational project focused on learning **Java and Bioinformatics concepts**.
+✅ Completed – Full-stack educational project focused on Spring Boot, Web APIs, Relational Databases, and Bioinformatics.
