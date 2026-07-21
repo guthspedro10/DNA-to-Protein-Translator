@@ -105,10 +105,8 @@ cd DNA-to-Protein-Translator
 ```
 ./mvnw spring-boot:run
 ```
-(The server will start on http://localhost:8080)
-
 ### 4. Run the Frontend
-Simply open the index.html file in your browser or serve it using Live Server in VS Code.
+Simply open "http://localhost:8080" on your browser
 
 ---
 
