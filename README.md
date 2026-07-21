@@ -27,25 +27,28 @@ This project was built to practice Full-Stack Software Development, RESTful API 
 
 The project follows a standard Spring Boot layered architecture:
 
-- controller/
-  - DNAController.java: REST Controller handling HTTP requests
-- dto/
-  - requestDTO/DNARequest.java: Request payload mapping
-  - responseDTO/DNAResponse.java: Response payload mapping
-- model/
-  - DNAModel.java: JPA Entity mapping to the SQL database table
-  - GeneticCode.java: HashMap mapping codons to amino acids
-- repository/
-  - DNARepository.java: Spring Data JPA Repository for database queries
-- service/
-  - DNAService.java: Core transcription, translation, and persistence logic
+src/main/java/com/pedroguths/dna2proteintranslator/
+├── controller/
+│   └── DNAController.java        # REST Controller handling HTTP requests
+├── dto/
+│   ├── requestDTO/
+│   │   └── DNARequest.java       # Request payload mapping
+│   └── responseDTO/
+│       └── DNAResponse.java      # Response payload mapping
+├── model/
+│   ├── DNAModel.java             # JPA Entity mapping to the SQL database table
+│   └── GeneticCode.java          # HashMap mapping codons to amino acids
+├── repository/
+│   └── DNARepository.java        # Spring Data JPA Repository for database queries
+└── service/
+    └── DNAService.java           # Core transcription, translation, and persistence logic
 
 ---
 
 ## 🛠️ Technologies
 
 ### Backend & Database
-- Java 21
+- Java 17+
 - Spring Boot (Web, REST API)
 - Spring Data JPA / Hibernate
 - MySQL (Managed via MySQL Workbench)
@@ -79,7 +82,7 @@ Response (200 OK):
 ## 🚀 How to Run
 
 ### Prerequisites
-- Java Development Kit (JDK 21)
+- Java Development Kit (JDK 17+)
 - MySQL Server & MySQL Workbench
 - Maven (or use the included ./mvnw wrapper)
 
