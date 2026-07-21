@@ -131,4 +131,4 @@ Simply open "http://localhost:8080" on your browser
 
 ## 📌 Project Status
 
-✅ Completed – Full-stack educational project focused on Spring Boot, Web APIs, Relational Databases, and Bioinformatics.
+✅ Completed – Backend educational project focused on Spring Boot, Web APIs, Relational Databases and Bioinformatics.
