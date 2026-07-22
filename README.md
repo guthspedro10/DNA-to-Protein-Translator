@@ -94,7 +94,7 @@ spring:
     password: sua_senha
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
 ```
 
 ### 2. Clone the repository
