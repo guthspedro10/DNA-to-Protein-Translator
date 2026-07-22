@@ -75,6 +75,7 @@ Response (200 OK):
   "protein": "Met-Thr-Ala-Asn"
 }
 ```
+
 ---
 
 ## 🚀 How to Run
@@ -110,16 +111,6 @@ cd DNA-to-Protein-Translator
 ```
 ### 4. Run the Frontend
 Simply open "http://localhost:8080" on your browser
-
----
-
-## 💻 Example Usage
-
-1. Open the Web UI.
-2. Paste a DNA sequence starting with ATG (e.g., ATGACTGCCAATTGA).
-3. Click Convert.
-4. View the transcribed RNA sequence and resulting Protein chain in real time.
-5. Check MySQL Workbench to see the auto-incremented record saved in the database.
 
 ---
 
