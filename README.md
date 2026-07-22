@@ -57,26 +57,6 @@ src/main/java/com/pedroguths/dna2proteintranslator
 
 ---
 
-## 🔌 API Reference
-### Convert DNA Sequence
-
-```
-POST /convert
-Request Body:
-{
-  "dna": "ATGACTGCCAATTGA"
-}
-```
-```
-Response (200 OK):
-{
-  "rna": "AUGACUGCCAAUUGA",
-  "protein": "Met-Thr-Ala-Asn"
-}
-```
-
----
-
 ## 🚀 How to Run
 
 ### Prerequisites
