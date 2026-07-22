@@ -25,20 +25,20 @@
 
 The project follows a standard Spring Boot layered architecture:
 ```
-src/main/java/com/pedroguths/dna2proteintranslator/
-├── controller/
+src/main/java/com/pedroguths/dna2proteintranslator
+├── controller
 │   └── DNAController.java        # REST Controller handling HTTP requests
-├── dto/
-│   ├── requestDTO/
+├── dto
+│   ├── requestDTO
 │   │   └── DNARequest.java       # Request payload mapping
-│   └── responseDTO/
+│   └── responseDTO
 │       └── DNAResponse.java      # Response payload mapping
-├── model/
+├── model
 │   ├── DNAModel.java             # JPA Entity mapping to the SQL database table
 │   └── GeneticCode.java          # HashMap mapping codons to amino acids
-├── repository/
+├── repository
 │   └── DNARepository.java        # Spring Data JPA Repository for database queries
-└── service/
+└── service
     └── DNAService.java           # Core transcription, translation, and persistence logic
 ```
 ---
