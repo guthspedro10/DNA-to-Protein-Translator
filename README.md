@@ -50,10 +50,6 @@ src/main/java/com/pedroguths/dna2proteintranslator
 - MySQL (Managed via MySQL Workbench)
 - Maven (Dependency & Build Management)
 
-### Frontend
-- HTML5 & CSS3
-- JavaScript (Fetch API)
-
 ---
 
 ## 🚀 How to Run
