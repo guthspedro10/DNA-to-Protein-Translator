@@ -59,8 +59,15 @@ src/main/java/com/pedroguths/dna2proteintranslator
 - MySQL Server & MySQL Workbench
 - Maven (or use the included ./mvnw wrapper)
 
-### 1. Database Setup
+### 1. Clone the repository
+
+```
+git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
+```
+
+### 2. Database Setup
 Configure your MySQL database connection in src/main/resources/application.yaml:
+
 ```
 spring:
   datasource:
@@ -72,14 +79,11 @@ spring:
       ddl-auto: update
 ```
 
-### 2. Clone the repository
-```
-git clone https://github.com/guthspedro10/DNA-to-Protein-Translator.git
-```
+### 3. Run the Backend API
+
 ```
 cd DNA-to-Protein-Translator
 ```
-### 3. Run the Backend API
 ```
 ./mvnw spring-boot:run
 ```
