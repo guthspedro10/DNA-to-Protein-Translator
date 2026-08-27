@@ -64,7 +64,7 @@ src/main/java/com/pedroguths/dna2proteintranslator
 - MySQL Server & MySQL Workbench
 - Maven (or use the included ./mvnw wrapper)
 
-### 1. Database Configuration
+### 1. Database Setup
 Configure your MySQL database connection in src/main/resources/application.yaml:
 ```
 spring:
