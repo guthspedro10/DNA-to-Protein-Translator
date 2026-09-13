@@ -4,8 +4,6 @@
 
 - Backend application developed in Java (Spring Boot) that simulates part of the Central Dogma of Molecular Biology: DNA → RNA → Protein
 - The application receives a DNA sequence, performs transcription to RNA, executes translation into an amino acid chain using a genetic code dictionary, and automatically persists the transaction history in a relational database.
-- Frontend interface built as a responsive Single Page Application (SPA) consuming backend REST APIs
-
 ---
 
 ## ⚙️ Features
@@ -16,7 +14,6 @@
 - Stop Codon Detection (UAA, UAG, UGA) to terminate protein synthesis.
 - Complete Codon Dictionary implemented via HashMap.
 - SQL Database Persistence: Automatically saves each processing entry (id auto-increment, dna, rna, protein) using Spring Data JPA.
-- Responsive Web UI built with HTML, CSS, and JavaScript.
 
 ---
 
@@ -51,10 +48,6 @@ src/main/java/com/pedroguths/dna2proteintranslator
 - MySQL (Managed via MySQL Workbench)
 - Maven (Dependency & Build Management)
 
-### Frontend
-- HTML5 & CSS3
-- JavaScript (Fetch API)
-
 ---
 
 ## 🚀 How to Run
@@ -88,8 +81,7 @@ cd DNA-to-Protein-Translator
 ```
 ./mvnw spring-boot:run
 ```
-### 4. Run the Frontend
-Simply open "http://localhost:8080" on your browser
+### 4. Open Postman or Insomnia and check
 
 ---
 
